@@ -1,0 +1,23 @@
+public class Year2 {
+
+	public static void main(String[] args) {
+		// 연차 날짜 알려주기
+		int i = 0*12+11;// (단위: 월)
+		switch (i/12) {
+		case 0: case 1:System.out.println("15일");break;
+		case 2: case 3: System.out.println("16일"); break;
+		case 4: case 5: System.out.println("17일"); break;
+		case 6: case 7: System.out.println("18일"); break;
+		case 8: case 9: System.out.println("19일"); break;
+		case 10: case 11: System.out.println("20일"); break;
+		case 12: case 13: System.out.println("21일"); break;
+		case 14: case 15: System.out.println("22일"); break;
+		case 16: case 17: System.out.println("23일"); break;
+		case 18: case 19: System.out.println("24일"); break;
+		default : System.out.println("25일");
+		}
+		
+		 
+	}
+
+}
