@@ -97,10 +97,16 @@ public class Operator4 {
 			System.out.println(bitNum1 + bitNum2);
 			System.out.println(bitNum1 & bitNum2);
 			System.out.println(bitNum1 | bitNum2);
-			System.out.println(~bitNum1); // 1의 보수(?)
+			System.out.println(~bitNum1); // n(1 or 2)의 보수(?)
 			System.out.println(~bitNum2); // 기존값 +1 후 (-) 기호 앞으로. (???)
 			System.out.println(bitNum1 ^ bitNum2);
-			
+			System.out.println("--------------------------");
+			System.out.println(bitNum2<<1); // 곱하기 2 '한 번'
+			System.out.println(bitNum2>>1); // 나누기 2 '한 번'
+			System.out.println(bitNum2<<2); // 곱하기 2 '두 번'
+			System.out.println(bitNum2>>2); // 나누기 2 '두 번'
+			System.out.println(bitNum2 >>> 1);
+			System.out.println(~bitNum2 >>> 1);			
 		}
 	}
 
