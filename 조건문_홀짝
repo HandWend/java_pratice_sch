@@ -1,0 +1,12 @@
+public class Controlflow8 {
+
+	public static void main(String[] args) {
+		int i=59;
+		// System.out.println("[DEG]"+(i%2==0));
+		if (i % 2 == 0) {
+			System.out.println("i는 짝수입니다.");
+		} else { 
+			System.out.println("i는 홀수입니다."); 
+		}
+  }
+ }
