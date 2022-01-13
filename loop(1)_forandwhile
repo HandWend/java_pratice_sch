@@ -31,6 +31,15 @@ public class Loop1 {
 			++l;
 			}
 		}
-
+		System.out.println("============");
+		{
+			// do ~ while: 초기값을 주고 돌리는 것.
+			int i = 1;
+			do {
+				System.out.println(i + ". joker");
+				i++;
+			} while (i<=5);
+				
+		}
 	}
 }
