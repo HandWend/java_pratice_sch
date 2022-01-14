@@ -1,0 +1,23 @@
+/**
+* 
+* @author smart02
+* 피보나치 수열
+*/
+public class Loop8 {
+
+	public static void main(String[] args) {
+		int m = 0; // 앞 숫자
+		int n = 1; // 뒤 숫자
+		int r = 1; // 반복하는 수
+		int o = m + n; // 받는 수
+		while (r <= 7 ) {
+			System.out.printf("%d %d %d \n", m,n,o);
+			m = n;
+			n = o;
+			o = m+n;
+			r ++;
+			
+			
+		}
+	}
+}
