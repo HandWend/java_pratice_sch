@@ -27,6 +27,7 @@ public class Controlflow11 {
 		
 		switch (longevityYear) {
 		case 1: System.out.println("11개"); break;
+		// case 1: System.out.println("연차갯수가 "+(longevity - 1)+"개"); break;
 		case 2: System.out.println("15개"); break;
 		case 3: case 4: System.out.println("16개"); break;
 		case 5: case 6: System.out.println("17개"); break;
