@@ -1,0 +1,22 @@
+/**
+ * 369 3의 배수일 땐 짝! 
+ * System.out.println("짝");
+ * @author smart02 ★
+ */
+public class Loop15 {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 50; i++) {
+			
+			if (i % 3 == 0) {
+				System.out.println("짝");
+				continue;
+
+			}
+			
+			System.out.println(i);
+		}
+	}
+
+}
