@@ -1,0 +1,70 @@
+import java.util.Scanner;
+/**
+ * @author smart02
+*/
+public class ArrayExam8 {
+
+	public static void main(String[] args) {
+		int[][] arr = { { 2, 7, 6 }, 
+						{ 9, 5, 1 }, 
+						{ 4, 3, 8 } }; // 마방진 체크
+		// 1
+		int rowCntChk = 0;
+		for (int i = 0; i < arr.length; i++) {
+			// 2
+			int sum = 0;
+			for (int j = 0; j < arr[i].length; j++) {
+				sum += arr[i][j];
+				rowCntChk++; // 행 체크
+			}
+			if (sum != 15)
+				break;
+		}
+		if (rowCntChk != 9) {
+			System.out.println("오답");
+			return;
+		};
+		int colCntChk = 0;
+		// 세로값 15체크
+		for (int i = 0; i < arr.length; i++) {
+			int sum = 0;
+			for (int j = 0; j < arr[i].length; j++) {
+				sum += arr[j][i];
+				colCntChk++;
+			}
+			if (sum != 15)
+				break;
+		}
+		if (colCntChk!=9) {
+			System.out.println("오답");
+			return;
+		}; // 열 체크
+		int leftTop = 0;
+		for (int i = 0; i < arr.length; i++) {
+			// 2
+			for (int j = 0; j < arr[i].length; j++) {
+				if (i == j) {
+					leftTop += arr[j][i];
+				}
+			}
+		}
+		if (leftTop != 15) {
+			System.out.println("오답");
+			return;
+		};
+		int rightTop = 0;
+		for (int i = 0; i < arr.length; i++) {
+			// 2
+			for (int j = 0; j >arr.length; j++) {
+				if (i + j== 2) {
+					rightTop += arr[j][i];
+				}
+			}
+		}
+		if (rightTop != 15) {
+			System.out.println("오답");
+			return;
+		}
+		System.out.println("정답");
+	}
+}
